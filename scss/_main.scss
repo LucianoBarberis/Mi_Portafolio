@@ -1,0 +1,140 @@
+main {
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 300px 0px rgba(217,217,217,1);
+    -moz-box-shadow: 0px 0px 300px 0px rgba(217,217,217,1);
+    box-shadow: 0px 0px 300px 0px rgba(217,217,217,1);
+    background-color: $background-color;
+    color: $text-color;
+    .head2 {
+        border-left: 2px solid #2c2c2c;
+        margin: 50px 0px 50px 0px;
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+        .headasi {
+            padding: 0px 0px 100px 100px;
+            h1 {
+                font-size: 40px;
+                font-weight: 300;
+                display: inline;
+                text-decoration: underline;
+            }
+            .cvtx {
+                font-size: 18px;
+                font-weight: 300;
+            }
+            .cvcont {
+                color: $blanco;
+                text-decoration: none;
+                .cv {
+                    background: linear-gradient(to bottom right, #2c2c2c, #474545);
+                    backdrop-filter: blur(100px);
+                    -webkit-backdrop-filter: blur(100px);
+                    border-radius: 20px;
+                    border:2px solid rgb(255, 255, 255);
+                    box-shadow: 0 8px 32px 0 rgb(104, 101, 101);
+                    -webkit-box-shadow: -3px 3px 0px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -3px 3px 0px 0px rgba(0,0,0,0.75);
+                    box-shadow: -3px 3px 0px 0px rgba(0,0,0,0.75);
+                    margin-top: 20px;
+                    padding: 10px;
+                    font-size: 20px;
+                    border-radius: 20px;
+                    margin-right: 423px;
+                    transition: all 0.1s;
+                }
+                .cv:hover {
+                    margin-right: 422px;
+                font-size: 19px;
+                padding: 9px;
+                -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+                }
+                p {
+                    display: inline;
+                }
+            }
+        }
+        .foto-carnet {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+        }
+    }
+    .habil {
+        margin-top: 50px;
+        border-left: 2px solid #2c2c2c;
+        .texthabil {
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "habilidades tecs";
+            justify-items: center;
+            .titulo {
+                grid-area: habilidades;
+                padding: 0px 50px;
+                h2 {
+                    font-weight: 300;
+                    font-size: 45px;
+                    text-decoration: underline;
+                }
+                p {
+                    font-size: 20px;
+                    margin-top: 10px;
+                    .underline {
+                        text-decoration: underline;
+                        background-color: #2c2c2c;
+                        padding: 2px;
+                        color: $blanco;
+                    }
+                }
+            }
+            .tecs {
+                grid-area: tecs;
+                h3 {
+                    font-weight: 200;
+                    font-size: 40px;
+                    text-decoration: underline;
+                }
+                ul {
+                    margin-left: 220px;
+                    font-size: 25px;
+                    font-weight: 200;
+                    list-style: none;
+                    li {
+                        background: linear-gradient(to bottom right, #2c2c2c, #474545);
+                        color: $blanco;
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        border-radius: 10px;
+                        margin-right: 250px;
+                    }
+                }
+            }
+        }
+    }
+    .proyectcont {
+        border-left: 2px solid #2c2c2c;
+        h2 {
+            font-weight: 300;
+            font-size: 45px;
+            text-decoration: underline;
+            margin-left: 50px;
+        }
+        .contenedorhijo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0px 100px;
+            .tarjetas {
+                margin-top: 50px;
+                height: 350px;
+                width: 500px;
+                border: 1px solid #2c2c2c;
+                border-radius: 50px;
+            }
+        }
+    }
+}

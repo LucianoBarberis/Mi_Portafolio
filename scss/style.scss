@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$primary-color: #3498db; // Azul
+$secondary-color: #2ecc71; // Verde
+$accent-color: #f39c12; // Naranja
+$background-color: #D9D9D9; // Gris claro
+$text-color: #1b1b1b; // Gris oscuro
+$link-color: $primary-color; // Color de los enlaces
+$success-color: #27ae60; // Verde éxito
+$error-color: #e74c3c; // Rojo error
+$blanco: #ffffff;
+
+.divider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 2px;
+    border-radius: 100%;
+    background-color: #575555
+}
+
+@import"_body.scss";
+@import"_header.scss";
+@import"_main.scss";
+@import"_footer.scss";

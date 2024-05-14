@@ -1,0 +1,21 @@
+footer {
+    margin-top: 100px;
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        .caja {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 100%;
+            border: 1px solid #2c2c2c;
+            border-radius: 50px;
+            background-color: $background-color;
+            h2 {
+                font-size: 80px;
+                font-weight: 200;
+            }
+        }
+    }
+}
