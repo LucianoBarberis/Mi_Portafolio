@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon/icon.png" type="image/x-icon">
     <title>Portafolio</title>
 </head>
 <body>
     <header>
-        <nav id="Inicio">
+        <nav>
             <ul>
                 <li>
-                    <a href="#inicio">Inicio</a>
+                    <a href="#inicio">Sobre mi</a>
                 </li>
                 <li>
-                    <a href="#Habili">Habilidades</a>
+                    <a href="#habili">Habilidades</a>
                 </li>
                 <li>
-                    <a href="">Contactame</a>
+                    <a href="#contact">Contactame</a>
                 </li>
             </ul>
         </nav>
@@ -32,19 +33,24 @@
             <section class="headasi">
                 <h1>Luciano Barberis</h1>
                 <h3>Desarrollador Front-end</h3>
-                <div class="cvtx">
-                    <p>-Tengo 17 años, actualmente vivo y nací en Chañar ladeado, Argentina.</p>
-                    <p >-Me gradué como Desarrollador Web Front-end el 28/10/24. Gracias a esto, poseo habilidades en el uso de lenguajes de diseño como HTML y CSS y lenguajes de programacion como JavaScript.</p>
-                </div>
-                <a class="cvcont" href="">
-                    <div class="cv">
-                        <p>Curriculum Vitae</p><img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/document-1.png" alt="document-1"/>
-                    </div>
-                </a>
             </section>
         </div>
-        <div class="divider" id="Habili"></div>
-        <div class="habil" >
+        <div class="divider" id="inicio"></div>
+        <div class="perfil">
+            <div class="cvtx">
+                <p>-Tengo 17 años, actualmente vivo y nací en Chañar ladeado, Argentina.</p>
+                <p>-Me gradué como Desarrollador Web Front-end el 28/10/24. Gracias a esto, poseo habilidades en el uso de lenguajes de diseño como HTML, CSS y en lenguajes de programación como JavaScript, ademas gracias a este curso puedo usar lenguajes de compilado como SASS o Frameworks como Bootstrap.</p>
+                <p>-Desde los 9 años hasta los 14 años estudie la lengua extranjera de ingles, no considero que tengo un gran nivel de comprencion en esta lengua pero puedo entablar conversaciones simples y entender textos en este idioma.</p>
+                <p>-Actualmente no poseo experiencia laboral en el rubro.</p>
+            </div>
+            <a class="cvcont" href="">
+                <div class="cv">
+                    <p>Curriculum Vitae</p><img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/document-1.png" alt="document-1"/>
+                </div>
+            </a>
+        </div>
+        <div class="divider" id="habili"></div>
+        <div class="habil">
             <div class="texthabil">
                 <div class="titulo">
                     <h2>Habilidades</h2>
@@ -64,8 +70,6 @@
                     <h3>FrameWorks:</h3>
                     <ul>
                         <li>Bootstrap <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/30/7950F2/external-bootstrap-a-free-and-open-source-css-framework-logo-bold-tal-revivo.png" alt="external-bootstrap-a-free-and-open-source-css-framework-logo-bold-tal-revivo"/></li>
-                        <li>TailwindCss <img width="25" height="25" src="https://img.icons8.com/material/30/22C3E6/tailwind_css.png" alt="tailwind_css"/></li>
-                        <li>Foundation<img width="30" height="30" src="https://img.icons8.com/ios/30/EBEBEB/astronaut.png" alt="astronaut"/></li>
                         <li>ReactJS <img width="30" height="30" src="https://img.icons8.com/external-soleicons-line-amoghdesign/30/22C3E6/external-atom-soleicons-line-vol-1-soleicons-line-amoghdesign.png" alt="external-atom-soleicons-line-vol-1-soleicons-line-amoghdesign"/></li>
                     </ul>
                 </div>
@@ -87,12 +91,13 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="contenedor">
             <div class="caja">
                 <h2>Soy el Footer</h2>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

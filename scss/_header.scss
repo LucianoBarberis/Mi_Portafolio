@@ -1,4 +1,7 @@
 header {
+    position: sticky;
+    top: 15px;
+    z-index: 10;
     nav {
         ul {
             height: 55px;
