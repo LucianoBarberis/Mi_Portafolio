@@ -1,32 +1,37 @@
 header {
+    background: rgba(40, 40, 40, 0.65);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(40, 40, 40, 0.17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
     position: sticky;
-    top: 15px;
-    z-index: 10;
+    top: 0pc;
+    z-index: 100;
+    border-bottom: 2px solid rgba(63, 20, 122, 1);
+    a {
+        img {
+            margin-right: 600px;
+            height: 70px;
+        }
+    }
     nav {
         ul {
-            height: 55px;
-            border-radius: 30px;
-            padding: 10px;
             display: flex;
-            justify-content: center;
-            margin: 0px 300px;
-            background: linear-gradient(to bottom right, #2c2c2c, #474545);
-            backdrop-filter: blur(100px);
-            -webkit-backdrop-filter: blur(100px);
-            border-radius: 20px;
-            border:1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
             li {
                 list-style: none;
                 a {
-                    margin-right: 15px;
-                    font-size: 25px;
-                    color: $blanco;
+                    font-size: 20px;
                     text-decoration: none;
-                    transition: all 0.5s;
+                    color: aliceblue;
+                    padding: 10px;
+                    transition: all 0.3s;
                 }
                 a:hover {
-                    font-size: 27px;
+                    color: rgb(137, 96, 195);
                 }
             }
         }

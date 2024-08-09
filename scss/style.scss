@@ -4,32 +4,6 @@
     box-sizing: border-box;
 }
 
-@mixin border {
-    border-left: 2px solid #e8e8e8;
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
-}
-
-$primary-color: #3498db; // Azul
-$secondary-color: #2ecc71; // Verde
-$accent-color: #f39c12; // Naranja
-$background-color: #3d3d3d; // Gris claro
-$text-color: #ffffff; // Gris oscuro
-$link-color: $primary-color; // Color de los enlaces
-$success-color: #27ae60; // Verde éxito
-$error-color: #e74c3c; // Rojo error
-$blanco: #ffffff;
-
-.divider {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
-    height: 2px;
-    border-radius: 100%;
-    background-color: #e8e8e8
-}
-
 @import"_body.scss";
 @import"_header.scss";
 @import"_main.scss";

@@ -3,101 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/favicon/icon.png" type="image/x-icon">
-    <title>Portafolio</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/Marca Personal/berisIcon/favicon.ico" type="image/x-icon">
+    <title>Portafolio Beris</title>
 </head>
 <body>
+    <span id="inicio"></span>
     <header>
+        <a href="#inicio">
+            <img src="./img/Marca Personal/berisIcon/android-chrome-192x192.png">
+        </a>
         <nav>
             <ul>
-                <li>
-                    <a href="#inicio">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="#habili">Habilidades</a>
-                </li>
-                <li>
-                    <a href="#contact">Contactame</a>
-                </li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="head2">
-            <img class="foto-carnet" src="./img/Foto Carnet..jpg" alt="">
-            <section class="headasi">
-                <h1>Luciano Barberis</h1>
-                <h3>Desarrollador Front-end</h3>
-            </section>
-        </div>
-        <div class="divider" id="inicio"></div>
-        <div class="perfil">
-            <div class="cvtx">
-                <p>-Tengo 17 años, actualmente vivo y nací en Chañar ladeado, Argentina.</p>
-                <p>-Me gradué como Desarrollador Web Front-end el 28/10/24. Gracias a esto, poseo habilidades en el uso de lenguajes de diseño como HTML, CSS y en lenguajes de programación como JavaScript, ademas gracias a este curso puedo usar lenguajes de compilado como SASS o Frameworks como Bootstrap.</p>
-                <p>-Desde los 9 años hasta los 14 años estudie la lengua extranjera de ingles, no considero que tengo un gran nivel de comprencion en esta lengua pero puedo entablar conversaciones simples y entender textos en este idioma.</p>
-                <p>-Actualmente no poseo experiencia laboral en el rubro.</p>
-            </div>
-            <a class="cvcont" href="">
-                <div class="cv">
-                    <p>Curriculum Vitae</p><img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/document-1.png" alt="document-1"/>
+        <section id="aboutme" class="present">
+            <img src="./img/fotoCarnet..jpg">
+            <div class="text">
+                <h2>Hola... Soy Luciano.</h2>
+                <div class="typing-demo">
+                    Front-end Developer Trainee
                 </div>
+                <h3>En busqueda de nuevos conocimientos...</h3>
+            </div>
+        </section>
+        <section class="contacto">
+            <a href="https://github.com/LucianoBarberis" class="button" target="_blank">
+            Git Hub
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                <path clip-rule="evenodd"d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"fill-rule="evenodd"></path>
+            </svg>
             </a>
-        </div>
-        <div class="divider" id="habili"></div>
-        <div class="habil">
-            <div class="texthabil">
-                <div class="titulo">
-                    <h2>Habilidades</h2>
-                    <p><span class="underline">SEO:</span> Tengo la capacidad de utilizar estrategias para poder optimizar una pagina web para que esta tenga mas repercución.</p>
-                    <p><span class="underline">Lengua extranjera:</span> Considero que tengo un nivel de ingles de un 30%, puedo entablar conversaciones simples.
-                    </p>
-                    <p><span class="underline">Diseño UX/UI:</span> Tengo capacitaciones en el diseño UX/UI de una pagina, considero que debo mejorar esta habilidad.</p>
-                    <p><span class="underline">Trabajo en equipo:</span> Puedo utilizar la modalida de trabajo SCRUM ya que me capasite para poder utilizar esta modalida.</p>
-                </div>
-                <div class="tecs">
-                    <h3>Tecnologias:</h3>
-                    <ul>
-                        <li>JavaScript<img width="30" height="30" src="https://img.icons8.com/ios-filled/50/f9d242/javascript.png" alt="javascript"/></li>
-                        <li>HTML<img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FD7E14/html-5--v1.png" alt="html-5--v1"/></li>
-                        <li>CSS <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/22C3E6/css3.png" alt="css3"/></li>
-                    </ul>
-                    <h3>FrameWorks:</h3>
-                    <ul>
-                        <li>Bootstrap <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/30/7950F2/external-bootstrap-a-free-and-open-source-css-framework-logo-bold-tal-revivo.png" alt="external-bootstrap-a-free-and-open-source-css-framework-logo-bold-tal-revivo"/></li>
-                        <li>ReactJS <img width="30" height="30" src="https://img.icons8.com/external-soleicons-line-amoghdesign/30/22C3E6/external-atom-soleicons-line-vol-1-soleicons-line-amoghdesign.png" alt="external-atom-soleicons-line-vol-1-soleicons-line-amoghdesign"/></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <div class="proyectcont">
-            <h2>Proyectos</h2>
-            <div class="contenedorhijo">
-                <div class="tarjetas puno">
-                    
-                </div>
-                <div class="tarjetas pdos">
-                    
-                </div>
-                <div class="tarjetas ptres">
-                    
-                </div>
-            </div>
-        </div>
+            <a href="https://www.linkedin.com/in/luciano-barberis-33b641307/?trk=opento_sprofile_topcard" class="button" target="_blank">
+                LinkedIn
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path clip-rule="evenodd"d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"fill-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a href="mailto:barberisluciano58@gmail.com" class="button">
+                Gmail
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path clip-rule="evenodd"d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"fill-rule="evenodd"></path>
+                </svg>
+            </a>
+        </section>
+        <section class="aboutMe">
+            <h2 class="underline">
+                <svg class="size-16" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
+                    <path d="M15 19l2 2l4 -4"></path>
+                </svg>
+                Sobre mi
+            </h2>
+            <p>Actualmente tengo 17 años y vivo en Rosario, Argentina.</p>
+            <p>Soy un desarrollador web front-end trainee apasionado por el mundo del desarrollo web y la programación. Con experiencia en HTML, CSS, JavaScript y una fuerte habilidad en UI, me especializo en convertir ideas en sitios web funcionales y estéticamente agradables.</p>
+            <p>Mi foco en estos momento se mantiene en el continuo aprendizaje es por eso que me abro a todo tipo de pequeños proyectos que me sumen nuevas experiencias trabajando en equipo.</p>
+            <p>En mayo de 2024 resibí mi diploma de Desarrollador Web en la plataforma <a href="https://www.coderhouse.com/ar/certificados/664760eea982eb1f36148563?lang=es" target="_blank" style="color: #fff;">Coder House</a>. Actualmente estoy terminando de cursar JavaScript y en 2025 voy a iniciar la carrera de "Ingenieria en sistemas informaticos".</p>
+        </section>
     </main>
-    <footer id="contact">
-        <div class="contenedor">
-            <div class="caja">
-                <h2>Soy el Footer</h2>
-            </div>
-        </div>
+    <footer>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
