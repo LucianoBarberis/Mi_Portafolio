@@ -6,9 +6,12 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 250vh;
   background: linear-gradient(0deg, rgb(63, 20, 122) 0%, rgb(15, 16, 28) 25%);
   font-family: "Lexend", sans-serif;
@@ -43,7 +46,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  height: 100px;
   position: sticky;
   top: 0pc;
   z-index: 100;
@@ -55,6 +58,7 @@ header a img {
 }
 header nav ul {
   display: flex;
+  margin-top: 20px;
 }
 header nav ul li {
   list-style: none;
@@ -62,7 +66,7 @@ header nav ul li {
 header nav ul li a {
   font-size: 20px;
   text-decoration: none;
-  color: aliceblue;
+  color: #fff;
   padding: 10px;
   transition: all 0.3s;
 }
@@ -74,6 +78,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+main h2 {
+  font-weight: 300;
+  font-size: 35px;
 }
 main .present {
   display: flex;
@@ -184,27 +192,167 @@ main .contacto .button::before {
 main .aboutMe {
   padding: 20px;
   border-radius: 30px;
-  width: 700px;
+  width: 36.458vw;
   display: flex;
   margin-top: 130px;
   flex-direction: column;
   transition: all 0.5s;
 }
-main .aboutMe p {
-  margin-top: 10px;
+main p {
   line-height: 1.5;
+  font-size: 18px;
+  margin-top: 10px;
 }
 main .aboutMe h2 {
   font-weight: 300;
   font-size: 35px;
+  margin-bottom: 30px;
 }
 main .aboutMe h2 .size-8 {
   width: 24px;
   height: 24px;
 }
-main .aboutMe:hover {
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  transform: scale(1.04);
+main .stack {
+  display: flex;
+  width: 36.458vw;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 100px;
+  height: 350px;
+  transition: all 0.5s;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-/*# sourceMappingURL=style.css.map */
+main .stack .stackList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  list-style: none;
+}
+
+main .stack .stackList .stackItem {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(63, 20, 122);
+  transition: all 0.5s;
+  cursor: default;
+}
+
+main .stack p {
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 50px;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  color: #4d4d4d;
+  background-color: #ffff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+.example-2 .icon-content a[data-social="spotify"] .filled,
+.example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
+  background-color: #f98742;
+}
+.example-2 .icon-content a[data-social="pinterest"] .filled,
+.example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
+  background-color: #00a2ff;
+}
+.example-2 .icon-content a[data-social="dribbble"] .filled,
+.example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
+  background-color: #f6e606;
+}
+
+main .proyectos {
+  display: flex;
+  width: 36.458vw;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  transition: all 0.5s;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+main .proyectos h2 {
+  align-self: flex-start;
+}
+
+main .proyectos h3 {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 300;
+}
