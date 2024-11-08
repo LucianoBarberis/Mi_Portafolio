@@ -128,7 +128,7 @@ main .contacto {
   display: flex;
   justify-content: center;
 }
-main .contacto .button {
+main .button {
   text-decoration: none;
   margin-left: 10px;
   width: 150px;
@@ -152,22 +152,22 @@ main .contacto .button {
   font-size: 15px;
   font-family: "Lexend", sans-serif;
 }
-main .contacto .button .icon {
+main .button .icon {
   width: 24px;
   height: 24px;
   transition: all 0.3s ease-in-out;
 }
-main .contacto .button:hover {
+main .button:hover {
   transform: scale(1.05);
   border-color: rgba(255, 255, 255, 0.6);
 }
-main .contacto .button:hover .icon {
+main .button:hover .icon {
   transform: translate(4px);
 }
-main .contacto .button:hover::before {
+main .button:hover::before {
   animation: shine 1.5s ease-out infinite;
 }
-main .contacto .button::before {
+main .button::before {
   content: "";
   position: absolute;
   width: 100px;
@@ -332,7 +332,7 @@ ul {
 }
 .example-2 .icon-content a[data-social="dribbble"] .filled,
 .example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
-  background-color: #f6e606;
+  background-color: #f0db4f;
 }
 
 main .proyectos {
@@ -350,10 +350,65 @@ main .proyectos h2 {
   align-self: flex-start;
 }
 
-main .proyectos h3 {
+.containerProyects {
   margin-top: 50px;
-  font-size: 30px;
-  font-weight: 300;
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+  display: flex;
+  min-width: 19vw;
+  min-height: 52vh;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 16px;
+}
+
+.cardPreview {
+  height: 12rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardPreview img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease-out;
+}
+
+.card:hover .cardPreview img {
+  transform: scale(1.14);
+}
+
+.cardContent {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: #000;
+}
+
+.cardBottom {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardDescription {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
 }
 
 /* Media queries */
@@ -400,24 +455,24 @@ main .proyectos h3 {
   main .proyectos h3 {
     font-size: 25px;
   }
-  main .contacto .button {
+  main .button {
     width: 100%;
   }
-  main .contacto .button .icon {
+  main .button .icon {
     width: 20px;
     height: 20px;
   }
-  main .contacto .button span {
+  main .button span {
     display: none;
   }
-  main .contacto .button:hover {
+  main .button:hover {
     width: 100%;
   }
-  main .contacto .button:hover .icon {
+  main .button:hover .icon {
     width: 20px;
     height: 20px;
   }
-  main .contacto .button:hover span {
+  main .button:hover span {
     display: none;
   }
   main .aboutMe {
@@ -459,7 +514,10 @@ main .proyectos h3 {
     width: 320px;
   }
   main .proyectos p {
-    font-size: 10px;
+    font-size: 13px;
+  }
+  main .proyectos h2 {
+    font-size: 20px;
   }
   main h2 {
     align-self: center;
