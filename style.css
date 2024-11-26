@@ -353,7 +353,8 @@ main .proyectos h2 {
 .containerProyects {
   margin-top: 50px;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .card {
