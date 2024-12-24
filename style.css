@@ -322,17 +322,21 @@ ul {
 .example-2 .icon-content a:hover .filled {
   height: 100%;
 }
-.example-2 .icon-content a[data-social="spotify"] .filled,
-.example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
+.example-2 .icon-content a[data-social="html"] .filled,
+.example-2 .icon-content a[data-social="html"] ~ .tooltip {
   background-color: #f98742;
 }
-.example-2 .icon-content a[data-social="pinterest"] .filled,
-.example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
+.example-2 .icon-content a[data-social="css"] .filled,
+.example-2 .icon-content a[data-social="css"] ~ .tooltip {
   background-color: #00a2ff;
 }
-.example-2 .icon-content a[data-social="dribbble"] .filled,
-.example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
+.example-2 .icon-content a[data-social="javascript"] .filled,
+.example-2 .icon-content a[data-social="javascript"] ~ .tooltip {
   background-color: #f0db4f;
+}
+.example-2 .icon-content a[data-social="react"] .filled,
+.example-2 .icon-content a[data-social="react"] ~ .tooltip {
+  background-color: #57c4db;
 }
 
 main .proyectos {
