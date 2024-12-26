@@ -1,3 +1,7 @@
+:root {
+  --primary: #242424;
+  --secondary: #fff;
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,15 +15,16 @@ html {
 
 body {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  background: linear-gradient(0deg, rgb(63, 20, 122) 0%, rgb(15, 16, 28) 25%);
+  background: #242424;
   font-family: "Lexend", sans-serif;
   color: aliceblue;
-  padding-bottom: 800px;
+  padding-bottom: 100px;
 }
 body .underline {
   text-decoration: underline;
-  text-decoration-color: rgb(63, 20, 122);
+  text-decoration-color: var(--secondary);
   text-underline-offset: 10px;
 }
 
@@ -28,17 +33,18 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(15, 16, 28);
+  background: var(--primary);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(63, 20, 122);
+  background-color: var(--secondary);
   border-radius: 20px;
-  border: 3px solid rgb(15, 16, 28);
+  border: 3px solid var(--primary);
 }
 
 header {
   background: rgba(40, 40, 40, 0.65);
+  width: 100%;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
@@ -50,7 +56,7 @@ header {
   position: sticky;
   top: 0pc;
   z-index: 100;
-  border-bottom: 2px solid rgb(63, 20, 122);
+  border-bottom: 2px solid var(--secondary);
 }
 header a img {
   height: 70px;
@@ -70,13 +76,22 @@ header nav ul li a {
   transition: all 0.3s;
 }
 header nav ul li a:hover {
-  color: rgb(137, 96, 195);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 6px
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60vw;
+  border-radius: 46px;
+  background: linear-gradient(225deg, #202020, #272727);
+  box-shadow:  -29px 29px 59px #141414,
+                29px -29px 59px #343434;
+  margin: 70px 0px;
+  padding: 50px;
 }
 main h2 {
   font-weight: 300;
@@ -87,6 +102,7 @@ main .present {
   height: 200px;
   justify-content: center;
   align-items: flex-end;
+  width: 60vw;
   margin-bottom: 50px;
 }
 main .present img {
@@ -127,6 +143,7 @@ main .present h3 {
 main .contacto {
   display: flex;
   justify-content: center;
+  width: 50vw;
 }
 main .button {
   text-decoration: none;
@@ -137,7 +154,7 @@ main .button {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   padding-block: 0.5rem;
   padding-inline: 1.25rem;
-  background-color: rgb(63, 20, 122);
+  background-color: var(--primary);
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -151,6 +168,9 @@ main .button {
   overflow: hidden;
   font-size: 15px;
   font-family: "Lexend", sans-serif;
+}
+main .contacto .button {
+  width: 100%;
 }
 main .button .icon {
   width: 24px;
@@ -191,7 +211,6 @@ main .button::before {
 main .aboutMe {
   padding: 20px;
   border-radius: 30px;
-  width: 36.458vw;
   display: flex;
   margin-top: 130px;
   flex-direction: column;
@@ -213,7 +232,6 @@ main .aboutMe h2 .size-8 {
 }
 main .stack {
   display: flex;
-  width: 36.458vw;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 100px;
@@ -341,7 +359,6 @@ ul {
 
 main .proyectos {
   display: flex;
-  width: 36.458vw;
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
@@ -419,20 +436,23 @@ main .proyectos h2 {
 /* Media queries */
 @media (max-width: 1024px) {
   main .stack {
-    width: 80vw;
+    width: 50vw;
   }
   main .aboutMe {
-    width: 80vw;
+    width: 50vw;
   }
   main .proyectos {
-    width: 80vw;
+    width: 50vw;
   }
   main .contacto {
-    width: 80vw;
+    width: 50vw;
   }
 }
 
 @media (max-width: 768px) {
+  main {
+    width: 90vw;
+  }
   main .proyectos {
     width: 80vw;
   }
@@ -444,6 +464,7 @@ main .proyectos h2 {
   }
   main .present {
     flex-direction: column;
+
   }
   main .present .text {
     margin-top: 20px;
@@ -530,5 +551,6 @@ main .proyectos h2 {
   }
   main .present {
     transform: scale(0.9);
+    align-items: center;
   }
 }
