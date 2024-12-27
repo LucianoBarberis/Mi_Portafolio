@@ -17,10 +17,13 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #242424;
   font-family: "Lexend", sans-serif;
   color: aliceblue;
   padding-bottom: 100px;
+  background-color: #313131;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px
 }
 body .underline {
   text-decoration: underline;
@@ -426,6 +429,16 @@ main .proyectos h2 {
   align-items: center;
 }
 
+.cardTitle {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+}
+
 .cardDescription {
   margin-top: 0.5rem;
   display: -webkit-box;
@@ -449,7 +462,7 @@ main .proyectos h2 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   main {
     width: 90vw;
   }
