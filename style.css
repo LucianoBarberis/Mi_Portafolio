@@ -121,7 +121,7 @@ main .present .text h2 {
   font-size: 35px;
 }
 main .present .text .typing-demo {
-  width: 23ch;
+  width: 17ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
