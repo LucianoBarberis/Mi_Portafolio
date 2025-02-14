@@ -48,11 +48,22 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
 
-    const response = await fetch('http://localhost:3000/contacto', {
+    const response = await fetch('https://mi-portafolio-dyx7.onrender.com/contacto', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
-    });
-    const result = await response.json();
-    
+    })
+
+    Toastify({
+        text: "Mensaje enviado",
+        gravity: "bottom",
+        style: {
+            fontSize: "1.5rem",
+            color: "#fff",
+            background: "linear-gradient(to right,rgb(57, 167, 57),rgb(35, 190, 58))",
+            fontWeight: "300"
+        },
+    }).showToast();
+
+    e.target.reset();
 });
