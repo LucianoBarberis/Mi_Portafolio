@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -423,4 +421,19 @@ tbody tr:nth-child(odd) {
 tbody tr {
   font-size: 18px;
   height: 50px;
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 0px 30px;
+  }
+  header nav ul {
+    display: none;
+  }
+  .contacto ul li a {
+    transform: scale(0.8);
+  }
+  .contacto ul {
+    width: auto;
+  }
 }
