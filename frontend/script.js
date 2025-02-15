@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
     if (window.scrollY >= 250) {
         btn.classList.add("dNone");
     } else {
-        btn.classList.remove("dNone"); // Add this to show the button when scrolling back up
+        btn.classList.remove("dNone");
     }
 });
 
@@ -67,3 +67,27 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
 
     e.target.reset();
 });
+
+const loadProjects = () => {
+    const containerP = document.getElementById("conteinerP")
+    let dataProjects = []
+    fetch("https://mi-portafolio-dyx7.onrender.com/proyectos")
+        .then((res)=> res.json())
+        .then((data)=>{
+            dataProjects = data
+            containerP.innerHTML = ''
+            dataProjects.forEach((e)=>{
+                const card = `
+                    <figure class="cardProject">
+                        <img src=${e.img} alt="">
+                        <div class="textCard">
+                            <h3>${e.title}</h3>
+                            <p>${e.text}</p>
+                            <a href=${e.link} target="_blank">${e.link}</a>
+                        </div>
+                    </figure>
+                `
+                containerP.innerHTML += card
+            })
+        })
+}
