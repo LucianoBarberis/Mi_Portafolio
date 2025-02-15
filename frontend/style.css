@@ -402,11 +402,8 @@ textarea {
 }
 
 .dashboardTitle {
-  text-align: center;
-  font-size: 3rem;
-  padding: 10px;
-  border-radius: 5px;
-  text-decoration: underline;
+  margin-top: 50px;
+  font-size: 3em;
 }
 
 tbody th {
@@ -426,7 +423,6 @@ tbody tr {
 tbody tr td {
   padding: 5px;
   border-bottom: 2px solid var(--secondary);
-  border-top: 2px solid var(--secondary);
 }
 
 .dashInp {
