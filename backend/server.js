@@ -24,9 +24,19 @@ app.post('/contacto', (req, res) => {
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
+app.post('/proyectos/subir', (req, res)=>{
+    const { img, title, text, link } = req.body
+    if(!img || !title || !text || !link) {
+        return res.status(400).json({ error: "Todos los campos son obligatorios"})
+    }
+    const sql = 'INSERT INTO proyectos (img, title, text, link) VALUES (?, ?, ?, ?)'
+    db.run(sql, [img, title, text, link], function (err) {
+        if(err) {
+            return res.status(500).json({ error: 'Error al guardar el mensaje' })
+        }
+        res.json({ message: 'Mensaje enviado con exito' })
+    })
+})
 
 app.get('/mensajes', (req, res) => {
     const sql = 'SELECT * FROM mensajes';
@@ -36,6 +46,20 @@ app.get('/mensajes', (req, res) => {
         }
         res.json(rows);
     });
+});
+
+app.get('/proyectos', (req, res) => {
+    const sql = 'SELECT * FROM proyectos';
+    db.all(sql, [], (err, rows)=>{
+        if (err) {
+            return res.status(500).json({ error: 'Error al obtener los proyectos' })
+        }
+        res.json(rows)
+    })
+})
+
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
 
 app.delete('/mensajes/:id', (req, res) => {
@@ -49,3 +73,15 @@ app.delete('/mensajes/:id', (req, res) => {
         res.json({ message: 'Mensaje eliminado con éxito' });
     });
 });
+
+app.delete('/proyectos/borrar/:id', (req, res) => {
+    const { id } = req.params;
+    const sql = "DELETE FROM proyectos WHERE id = ?"
+
+    db.run(sql, [id], function (err) {
+        if(err) {
+            return res.status(500).json({ error: 'Error al intentar borrar el proyecto' })
+        }
+        res.json({ message: 'Proyecto eliminado con éxito' })
+    })
+})

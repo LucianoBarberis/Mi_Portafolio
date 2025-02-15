@@ -13,6 +13,13 @@ db.serialize(() => {
         email TEXT NOT NULL,
         mensaje TEXT NOT NULL
     )`);
+    db.run(`CREATE TABLE IF NOT EXISTS proyectos (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        img TEXT NOT NULL,
+        title TEXT NOT NULL,
+        text TEXT NOT NULL,
+        link TEXT NOT NULL
+        )`)
 });
 
 module.exports = db;
