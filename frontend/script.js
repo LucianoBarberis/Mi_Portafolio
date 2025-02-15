@@ -69,7 +69,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
 });
 
 const loadProjects = () => {
-    const containerP = document.getElementById("conteinerP")
+    const containerP = document.getElementById("containerP")
     let dataProjects = []
     fetch("https://mi-portafolio-dyx7.onrender.com/proyectos")
         .then((res)=> res.json())
@@ -91,3 +91,4 @@ const loadProjects = () => {
             })
         })
 }
+loadProjects()
