@@ -59,7 +59,7 @@ app.get('/proyectos', (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en ${PORT}`);
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
 
 app.delete('/mensajes/:id', (req, res) => {

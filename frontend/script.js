@@ -48,7 +48,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
 
-    const response = await fetch('https://mi-portafolio-dyx7.onrender.com/contacto', {
+    const response = await fetch('http://localhost:3000/contacto', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
@@ -71,7 +71,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
 const loadProjects = () => {
     const containerP = document.getElementById("containerP")
     let dataProjects = []
-    fetch("https://mi-portafolio-dyx7.onrender.com/proyectos")
+    fetch("http://localhost:3000/proyectos")
         .then((res)=> res.json())
         .then((data)=>{
             dataProjects = data
