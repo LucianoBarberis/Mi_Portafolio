@@ -58,6 +58,10 @@ app.get('/proyectos', (req, res) => {
     })
 })
 
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en ${PORT}`);
+});
+
 app.delete('/mensajes/:id', (req, res) => {
     const { id } = req.params;
     const sql = 'DELETE FROM mensajes WHERE id = ?';
