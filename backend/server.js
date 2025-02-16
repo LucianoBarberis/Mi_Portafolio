@@ -70,14 +70,14 @@ app.delete('/mensajes/:id', (req, res) => {
     });
 });
 
-// app.delete('/proyectos/borrar/:id', (req, res) => {
-//     const { id } = req.params;
-//     const sql = "DELETE FROM proyectos WHERE id = ?"
+app.delete('/proyectos/borrar/:id', (req, res) => {
+    const { id } = req.params;
+    const sql = "DELETE FROM proyectos WHERE id = ?"
 
-//     db.run(sql, [id], function (err) {
-//         if(err) {
-//             return res.status(500).json({ error: 'Error al intentar borrar el proyecto' })
-//         }
-//         res.json({ message: 'Proyecto eliminado con éxito' })
-//     })
-// })
+    db.run(sql, [id], function (err) {
+        if(err) {
+            return res.status(500).json({ error: 'Error al intentar borrar el proyecto' })
+        }
+        res.json({ message: 'Proyecto eliminado con éxito' })
+    })
+})
